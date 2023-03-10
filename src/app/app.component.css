@@ -1,0 +1,104 @@
+div.ui.container {
+  margin-top: 30px;
+  width: 70%;
+}
+
+.todo-description {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.todo-list {
+  margin-top: 8px;
+}
+
+.plain-text {
+  outline: none;
+  border: none;
+  background: none;
+  color: gray;
+}
+
+.plain-text:focus {
+  outline: 1px solid skyblue;
+}
+
+.completed {
+  color: green;
+}
+
+.completed input {
+  color: inherit;
+  font-weight: bold;
+}
+
+.filters {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.todo-footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-completed-btn{
+  position: relative;
+}
+
+.delete-completed-btn:hover::before{
+  content: 'Delete all completed';
+  position: absolute;
+  color: yellow;
+  background-color: black;
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 2px 8px;
+  left: 30px;
+}
+
+.footer-right{
+  margin-top: 10px;
+  display: flex;
+  padding: 0 12px;
+  font-size: 1.2rem;
+}
+
+.footer-right .delete-icon{
+  color: darkred;
+  font-size: 1.1em;
+}
+
+.link{
+  color: blue;
+  border-radius: 8px;
+  padding: 2px 8px;
+}
+
+.link:hover {
+  color: darkblue;
+  background-color: yellow;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.delete-icon {
+  padding-left: 10px;
+  color: red;
+  cursor: pointer;
+}
+
+.active-filter{
+  color: orange;
+  background-color: black;
+  font-weight: bold;
+}
